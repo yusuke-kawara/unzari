@@ -20,5 +20,4 @@ COPY yarn.lock /app/yarn.lock
 RUN bundle install
 RUN yarn install
 COPY . /app
-RUN RAILS_ENV=production bundle exec rake assets:precompile
 CMD ["rails", "server", "-b", "0.0.0.0"]
