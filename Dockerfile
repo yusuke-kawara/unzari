@@ -39,7 +39,6 @@ RUN rm -rf node_modules
 RUN yarn install --check-files
 
 # アセットのプリコンパイル
-RUN echo "Before precompile" && ls -la && RAILS_ENV=production bundle exec rake assets:precompile --trace && echo "After precompile"
 
 # サーバーの起動
 CMD ["rails", "server", "-b", "0.0.0.0"]
