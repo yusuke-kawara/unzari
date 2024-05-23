@@ -5,7 +5,6 @@ Rails.application.configure do
 
   # Code is not reloaded between requests.
   config.hosts << "unzari.onrender.com"
-   Rails.application.config.hosts << "unzari.onrender.com"
   config.cache_classes = true
 
   # Eager load code on boot. This eager loads most of Rails and
