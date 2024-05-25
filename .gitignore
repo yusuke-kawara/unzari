@@ -37,3 +37,5 @@
 
 .DS_Store
 /vendor/bundle
+
+.github/workflows/build_and_deploy.yml
