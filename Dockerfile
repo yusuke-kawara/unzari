@@ -6,7 +6,6 @@ ARG RUBY_VERSION
 ARG NODE_VERSION
 ENV LANG C.UTF-8
 ENV TZ Asia/Tokyo
-ENV RAILS_MASTER_KEY: ${{ secrets.RAILS_MASTER_KEY }}
 
 # Node.jsとYarnのインストール
 RUN curl -sL https://deb.nodesource.com/setup_${NODE_VERSION}.x | bash - \
