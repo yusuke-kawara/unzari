@@ -29,6 +29,7 @@ COPY yarn.lock /app/yarn.lock
 # Gemfileとyarnの依存関係のインストール
 RUN bundle install
 RUN yarn install
+
 # アプリケーションコードのコピー
 COPY . /app
 
@@ -38,7 +39,8 @@ RUN rm -rf node_modules
 # 依存関係の再インストール
 RUN yarn install --check-files
 
-# アセットのプリコンパイル
+# アセットのプリコンパイルを追加
+RUN bundle exec rails assets:precompile
 
 # サーバーの起動
 CMD ["rails", "server", "-b", "0.0.0.0"]
