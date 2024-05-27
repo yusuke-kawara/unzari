@@ -15,3 +15,16 @@
  * @import "bootstrap";
  * @import "custom";
  */
+ .rock-text {
+    text-align: center;
+    font-size: 33px;
+    font-weight: bold;
+    color: #ffe86e; /* 文字色 */
+    text-shadow: 
+      2px 2px 0 #777, /* 影の効果で岩っぽさを出す */
+      -1px -1px 0 #777, 
+      1px -1px 0 #777, 
+      -1px 1px 0 #777,
+      1px 1px 0 #777;
+    letter-spacing: 2px; /* 文字間隔 */
+  }
