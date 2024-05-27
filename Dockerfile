@@ -41,7 +41,5 @@ RUN yarn install --check-files
 
 # アセットのプリコンパイルを追加
 RUN bundle exec rails assets:precompile
-RUN RAILS_ENV=production bundle exec rake assets:precompile
-
 # サーバーの起動
 CMD ["rails", "server", "-b", "0.0.0.0"]
