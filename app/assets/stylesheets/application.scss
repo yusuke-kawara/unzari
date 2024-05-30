@@ -15,6 +15,9 @@
  * @import "bootstrap";
  * @import "custom";
  */
+ body {
+  background-color: #80D6FE;
+ }
  .rock-text {
     text-align: center;
     font-size: 26px;
@@ -24,5 +27,14 @@
   }
   
   .specific-paragraph {
-  text-align: left;
+    text-align: left;
+  }
+
+  .btn-group-vertical .btn {
+    margin: 15px 0 !important; /* ボタン間に10pxのマージンを追加 */
+    border-radius: 15px !important;/*!importantでボタン一つ一つに適用させる*/
+  }
+
+  .btn-group-vertical .btn:last-child {
+    margin-bottom: 0; /* 最後のボタンのマージンを0に設定 */
   }
