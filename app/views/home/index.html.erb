@@ -6,11 +6,12 @@
         <h2>どのステージで話す？</h2>
         <div class="container">
           <div class="btn-group-vertical w-100 mx-auto">
-              <button class="btn btn-secondary">マウティングゴリラ編</button>
-              <button class="btn btn-secondary">超絶お嬢様編</button>
-              <button class="btn btn-secondary">やばすぎる同僚編</button>
-              <button class="btn btn-secondary">無能上司編</button>
-              <button class="btn btn-secondary">変態担当者編</button>
+              <%= link_to 'マウティングゴリラ編', home_stage_path, class: 'btn btn-secondary', role: 'button' %>
+              <%= link_to 'お嬢様編',home_stage_path, class: 'btn btn-secondary', role: 'button' %>
+              <%= link_to '同僚編', home_stage_path, class: 'btn btn-secondary', role: 'button' %>
+              <%= link_to '上司編', home_stage_path, class: 'btn btn-secondary', role: 'button' %>
+              <%= link_to '担当者編', home_stage_path, class: 'btn btn-secondary', role: 'button' %>
+              
           </div>
         </div>
     </div>
