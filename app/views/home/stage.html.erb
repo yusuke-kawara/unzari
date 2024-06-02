@@ -1,1 +1,22 @@
-a
+<div class="container text-center mt-3">
+  <% case @stage %>
+  <% when "1" %>
+    <div class="mt-4">
+        <%= image_tag 'gorilla.jpg', alt: 'ゴリラ画像', class: 'img-fluid' %>
+        <P>あなた「おはようございます」</p>
+        <p>ゴリラ「あ？」</p>
+        <p>のように会話スペースを作成する</p>
+    </div>
+  <% when "2" %>
+    <%= image_tag 'ojousama.jpg', alt: 'お嬢様画像', class: 'img-fluid' %>
+    <p>お嬢様編の内容を表示します。</p>
+  <% when "3" %>
+    <p>同僚編の内容を表示します。</p>
+  <% when "4" %>
+    <p>上司編の内容を表示します。</p>
+  <% when "5" %>
+    <p>担当者編の内容を表示します。</p>
+  <% else %>
+    <p>ステージを選んでください。</p>
+  <% end %>
+</div>
