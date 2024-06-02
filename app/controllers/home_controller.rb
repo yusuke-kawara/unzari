@@ -3,5 +3,6 @@ class HomeController < ApplicationController
   end
 
   def stage
+    @stage = params[:stage]
   end
 end
