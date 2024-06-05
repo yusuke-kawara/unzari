@@ -12,6 +12,9 @@
               <%= link_to '上司編', home_stage_path(stage: 4), class: 'btn btn-secondary', role: 'button' %>
               <%= link_to '担当者編', home_stage_path(stage: 5), class: 'btn btn-secondary', role: 'button' %>
               
+              <%= link_to 'https://twitter.com/intent/tweet?' + { text: '難易度の高いキャラクターたちとの会話でコミュ力アップを!! #うんざりピーポーマスター', url: 'https://unzari.onrender.com/' }.to_query, target: '_blank', class: 'twitter-share-button' do %>
+                  <i class="fa-brands fa-x-twitter black-text"></i><span class="black-text"> で共有する</span>
+              <% end %>
           </div>
         </div>
     </div>

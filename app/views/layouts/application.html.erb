@@ -7,8 +7,25 @@
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
+    <!-- FBや他のソーシャルメディアで共有された時のリンクぷれびゅーに表示される情報の定義 -->
+    <meta property="og:title" content="うんざりピーポーマスター" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" contente="https://unzari.onrender.com/" />
+    <meta property="og:image" content="https://unzari.onrender.com/gorilla240.jpg" />
+    <meta property="og:description" content="難易度の高いキャラクターたちとの会話でコミュ力アップを!!" />
+    <meta property="og:site_name" content="うんざりピーポーマスター" />
+    <meta property="og:type" content:"website" />
+
+    <!-- X（旧Twitter） Card tags -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@kawara20230719" />
+    <meta property="og:url" content="https://unzari.onrender.com/" />
+    <meta property="og:site_name" content="うんざりピーポーマスター" />
+    <meta property="og:image" content="https://unzari.onrender.com/gorilla240.jpg" />
+
     <%= stylesheet_link_tag "application", media: "all", "data-turbolinks-track": "reload" %>
     <%= javascript_include_tag "application", "data-turbo-track": "reload", type: "module" %>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
   </head>
 
   <body>
